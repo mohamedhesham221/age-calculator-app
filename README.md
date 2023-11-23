@@ -31,12 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![screencapture for age calculator app main](.//assets/images/screencapture-file.png)
+![screencapture for age calculator app main](./dist/assets/images/screencapture-file.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Preview](https://age-calculator-app-delta-blue.vercel.app/)
 
 ## My process
 
@@ -50,5 +49,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Linkedin - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mohamedhesham221](https://www.frontendmentor.io/profile/mohamedhesham221)
+- Linkedin - [Muhammad Hisham](https://www.linkedin.com/in/muhammad-hisham-23544b253/)

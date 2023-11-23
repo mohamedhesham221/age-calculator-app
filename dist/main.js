@@ -25,7 +25,16 @@ calc.addEventListener("submit", function (e) {
       dayInput.parentElement.children.item(0).style.color = "#ff5757"
       errorCounter++;
     } else {
-      document.getElementById('days').textContent = dayInput.value;
+      // document.getElementById('days').textContent = dayInput.value;
+      let counts = setInterval(updated, 100);
+      let upTo = 0;
+      function updated() {
+        let count = document.getElementById("days");
+        count.textContent = ++upTo
+        if (upTo == dayInput.value) {
+          clearInterval(counts)
+        }
+      }
       document.getElementById("err-day").textContent = "";
       dayInput.style.borderColor = "#dbdbdb";
       dayInput.parentElement.children.item(0).style.color = "#716f6f";
@@ -41,7 +50,15 @@ calc.addEventListener("submit", function (e) {
       monthInput.parentElement.children.item(0).style.color = "#ff5757"
       errorCounter++;
     } else {
-      document.getElementById("months").textContent = (currenDate.getMonth() + 1) - monthInput.value;
+      let counts = setInterval(updated, 100)
+      let upTo = 0;
+      function updated() {
+        let count = document.getElementById("months");
+        count.textContent = ++upTo;
+        if (upTo == ((currenDate.getMonth() + 1) - monthInput.value)) {
+          clearInterval(counts);
+        }
+      }
       document.getElementById("err-month").textContent = "";
       monthInput.style.borderColor = "#dbdbdb";
       monthInput.parentElement.children.item(0).style.color = "#716f6f";
@@ -57,7 +74,15 @@ calc.addEventListener("submit", function (e) {
       yearInput.parentElement.children.item(0).style.color = "#ff5757"
       errorCounter++;
     } else {
-      document.getElementById("years").textContent = currenDate.getFullYear() - yearInput.value;
+      let counts = setInterval(updated, 100)
+      let upTo = 0;
+      function updated() {
+        let count = document.getElementById("years");
+        count.textContent = ++upTo
+        if (upTo == (currenDate.getFullYear() - yearInput.value)) {
+          clearInterval(counts);
+        }
+      }
       document.getElementById("err-year").textContent = "";
       yearInput.style.borderColor = "#dbdbdb";
       yearInput.parentElement.children.item(0).style.color = "#716f6f";
